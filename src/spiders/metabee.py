@@ -12,7 +12,6 @@ Primeiro spider, responsável pelas bases monocráticas
 def spider():
     global primeiro_processo
     primeiro_processo = 000000001
-    #f = open('urls.txt', 'r+')
 
     while True:
         arquivo = open('urls.txt', 'r')
