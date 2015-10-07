@@ -1667,3 +1667,4 @@ http://www.stf.jus.br/portal/jurisprudencia/listarJurisprudenciaDetalhe.asp?s1=1
 http://www.stf.jus.br/portal/jurisprudencia/listarJurisprudenciaDetalhe.asp?s1=1667&base=baseMonocraticas
 http://www.stf.jus.br/portal/jurisprudencia/listarJurisprudenciaDetalhe.asp?s1=1668&base=baseMonocraticas
 http://www.stf.jus.br/portal/jurisprudencia/listarJurisprudenciaDetalhe.asp?s1=1669&base=baseMonocraticas
+
