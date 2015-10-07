@@ -33,6 +33,7 @@ def spider():
             primeiro_processo += 1
             print(base_url)
             pass
+
         elif response.status_code != 200:
             break
         else:
