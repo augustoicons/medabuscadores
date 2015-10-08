@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 # -*- coding: utf-8 -*-
 import requests
-import re
+from time import sleep
 
 __author__ = 'Jose Augusto'
 """
@@ -21,22 +21,29 @@ def spider():
                    + primeiro_processo + "&base=baseMonocraticas"
         primeiro_processo = int(primeiro_processo)
         response = requests.get(base_url)
+        sleep(0.3)
         primeiro_processo += 1
-        while len(texto) < primeiro_processo:
+        # condição para verificar se o urls.txt está preenchido, não está funcionando.... hahahaha
+        if len(texto) < primeiro_processo:
             texto.append(base_url+"\n")
             arquivo = open('urls.txt', 'w')
             arquivo.writelines(texto)
+            print(base_url)
+        else:
+            pass
+        '''
+        while len(texto) < primeiro_processo:
+            texto.append(base_url+"\n")
+            arquivo = open('urls.txt', 'w')
+            arquivo.writelines(texto)'''
         arquivo.close()
 
         if response.status_code == 500:
             primeiro_processo += 1
-            print(base_url)
             pass
 
         elif response.status_code != 200:
             break
-        else:
-            print(base_url)
 
 if __name__ == "__main__":
     spider()
